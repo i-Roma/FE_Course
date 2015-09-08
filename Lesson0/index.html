@@ -7,9 +7,12 @@
 <body>
 	<div class="wrapper">
 		<header>
+			<!--h1-->
 			<span class="header__text-left">My Blog</span>
+			<!--h2-->
 			<span class="header__text-right">Another Wordpress blog</span>
 		</header>
+		<!--можно использовать border-bottom через css вместо добавления еще одного элемента-->
 		<hr>
 		<main>
 			<p>Hey!</p>
@@ -21,18 +24,18 @@
 		<footer>
 			<div class="footer--block-left">
 				<p>
-					<span><img src="localhost" alt="icon calender"></span>
-					Email sent the 28 november 2010 @ 17 h 55 min
+					<!--не нужно картинку выделять в отдельный span -->
+					<img src="localhost" alt="icon calender">
+					Email sent the <time>28 november 2010 @ 17 h 55 min</time>
 				</p>
 				<p>
-					<span><img src="localhost" alt="icon massage"></span>
+					<img src="localhost" alt="icon massage">
 					For any request, please contact
 					<a href="mailto:plugins@artyshow-studio.fr">plugins@artyshow-studio.fr</a>
 				</p>
 			</div>
-			<div class="footer--block-right">
-				<img src="localhost" alt="Wordpress">
-			</div>
+			<!--не нужно картинку выделять в отдельный span -->
+			<img src="localhost" alt="Wordpress" class="footer--block-right">
 		</footer>
 	</div>
 </body>
