@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+    margin: 45px 45px 35px;
+    font-family: Roboto;
+    font-size: 12px;
+    color: #444;
+}
+
+.grey-wrapper {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    width: 571px;
+    height: 371px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+
+}
+
+.white-wrapper {
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    width: 550px;
+    height: 354px;
+    margin: 7px 11px 10px 10px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+.content-wrapper {
+    width: 488px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 1px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.gradient {
+    width: 100%;
+    height: 28px;
+    background: #4088a9;
+    background: linear-gradient(to top, #fff, #eee);
+}
+
+.header__main-title {
+    margin-left: 1px;
+    display: inline-block;
+    color: #25779c;
+    font-size: 32px;
+}
+
+.header__sub-title {
+    float: right;
+    color: #939393;
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+main {
+    clear: both;
+    padding: 24px 0 22px;
+    border-bottom: 1px solid lightgrey;
+}
+
+main p:first-child {
+  padding-top: 0;
+}
+
+main p {
+  padding-top: 23px;
+}
+
+main p:nth-child(3) {
+  line-height: 17px;
+}
+
+footer {
+    position: relative;
+    margin-top: 11px;
+    font-size: 11.5px;
+    color: #888;
+}
+
+a {
+  color: #25779c;
+}
+
+footer p {
+  margin-left: -3px;
+  word-spacing: -1px;
+}
+
+.icon:before {
+    content: '';
+    background-image: url('../img/sprite0.png');
+    background-repeat: no-repeat;
+    left: 3px;
+    top: 5px;
+    position: relative;
+    display: inline;
+    display: inline-block;
+}
+
+.icon-small:before {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-bigest:before {
+    width: 32px;
+    height: 33px;
+}
+
+.icon-calendar:before { background-position: -41px 0; }
+.icon-massage:before { background-position: -61px 0; }
+.icon-wpLogo:before { background-position: -1px 0; }
+
+.move-logo {
+    position: absolute;
+    right: 2px;
+    top: -2px;
+}
