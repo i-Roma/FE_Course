@@ -46,8 +46,11 @@ header {
 .gradient {
     width: 100%;
     height: 28px;
-    background: #4088a9;
+    background: #eee;
     background: linear-gradient(to top, #fff, #eee);
+    background: -moz-linear-gradient(to top, #fff, #eee);
+    background: -ms-linear-gradient(to top, #fff, #eee);
+    background: -o-linear-gradient(to top, #fff, #eee);
 }
 
 .header__main-title {
@@ -105,7 +108,6 @@ footer p {
     left: 3px;
     top: 5px;
     position: relative;
-    display: inline;
     display: inline-block;
 }
 
@@ -125,6 +127,6 @@ footer p {
 
 .move-logo {
     position: absolute;
-    right: 2px;
+    right: 3px;
     top: -2px;
 }

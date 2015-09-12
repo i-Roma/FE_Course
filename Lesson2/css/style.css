@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-title {
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    background-color: #1b6d85;
+    color: #ffffff;
+}
+
+.main-container {
+    padding: 0;
+}
+
+.legend-style {
+    border: none;
+    color: #fff;
+}
+
+.over-star {
+    color: red;
+}
+
+.control-label.label-blockUp {
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.col-sm-8.col-control, .col-sm-10.col-control, .col-sm-12.col-control {
+    float: none;
+    margin: 0 auto;
+
+}
+
+.group-one {
+    background-color: #269abc;
+}
+
+.group-two {
+    background-color: #31b0d5;
+}
+
+.group-three {
+    background-color: #5bc0de;
+    padding-bottom: 30px;
+}
+
+.spacer {
+    width: 100%;
+    clear: both;
+    padding-bottom: 20px;
+}
+
+.my-form-group {
+    text-align: center;
+}
+
+.class {
+    position: relative;
+    margin: 0 auto;
+}
+
+.class .input-source {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.btn-send {
+    margin-top: 30px;
+    background-color: #1b6d85;
+    color: #fff;
+    width: 225px;
+    border-color: transparent;
+}
+
+.btn-send:hover {
+    margin-top: 30px;
+    background-color: #269abc;
+    color: #fff;
+    width: 225px;
+    border: 1px solid #ffffff;
+}
