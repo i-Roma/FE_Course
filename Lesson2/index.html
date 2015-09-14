@@ -67,12 +67,13 @@
                             <div class="col-sm-4 form-group">
                                 <label for="postCode" class="control-label label-blockUp">Post code</label>
                                 <input type="number" name="postCode" id="postCode" class="form-control" placeholder="01234">
+                                <!--может быть не только числом-->
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="region" class="control-label label-blockUp">Region</label>
                                 <select name="region" id="region" class="form-control">
-                                    <option>choose the region</option>
-                                    <option>Винницкая область</option>
+                                    <option value="-1">choose the region</option>
+                                    <option value="1">Винницкая область</option>
                                     <option>Волынская область</option>
                                     <option>Днепропетровская область</option>
                                     <option>Донецкая область</option>
@@ -106,6 +107,7 @@
                             <div class="col-sm-6 form-group">
                                 <label class="control-label label-blockUp">Number</label>
                                 <input type="number" class="form-control" placeholder="2/18">
+                                <!--может быть не только числом-->
                             </div>
                         </fieldset>
                 </div>
@@ -119,19 +121,19 @@
                 <label class="control-label label-blockUp">Hobbies</label>
                 <fieldset class="form-group">
                     <label class="checkbox-inline">
-                        <input type="checkbox" value="option1"> Music
+                        <input type="checkbox" value="option1" name="hobbies"> Music
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" value="option2"> Sport
+                        <input type="checkbox" value="option2" name="hobbies"> Sport
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" value="option3"> Bike ride
+                        <input type="checkbox" value="option3" name="hobbies"> Bike ride
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" value="option3"> Running
+                        <input type="checkbox" value="option3" name="hobbies"> Running
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" value="option3"> Race
+                        <input type="checkbox" value="option3" name="hobbies"> Race
                     </label>
                 </fieldset>
 
