@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body {
+    /*как показывает практика, лучше не задавать margin, padding для body отличные от нуля. */
+    /*Это потом может вылезти боком при адаптации под мобильные устройства*/
     margin: 45px 45px 35px;
     font-family: Roboto;
     font-size: 12px;
@@ -72,6 +74,9 @@ main {
     padding: 24px 0 22px;
     border-bottom: 1px solid lightgrey;
 }
+
+/*более удачно было б задать высоту строки и отступы(padding) для всех p*/
+/*а не для каждого в отдельности*/
 
 main p:first-child {
   padding-top: 0;
