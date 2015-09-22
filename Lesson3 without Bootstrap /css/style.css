@@ -182,7 +182,7 @@ footer {
 
 	.block-one, .block-two, .block-three {
 		display: inline-block;
-		margin: 0px auto;
+		margin: 0 auto;
 		padding: 7px;
 		background-color: #555;
 		color: #fff;
