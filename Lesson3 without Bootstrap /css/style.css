@@ -74,7 +74,6 @@ footer {
 	padding: 7px;
 	width: 100%;
 	height: 100%;
-	-webkit-transition: all 0.3s linear;
 	}
 
 .transition-effect {
@@ -100,8 +99,6 @@ footer {
 	.block-two, .block-three {
 		display: block;
 		height: 110px;
-		-webkit-transition: all 0.5s linear;
-
 	}
 
 }
@@ -142,7 +139,6 @@ footer {
 	}
 
 	.block-one, .block-two, .block-three {
-		-webkit-transition: all 0.5s linear;
 		height: 145px;
 	}
 
@@ -208,7 +204,6 @@ footer {
 		float: left;
 		width: 20%;
 		margin: 0;
-		-webkit-transition: all 0.3s linear;
 	}
 
 	.block-five {
