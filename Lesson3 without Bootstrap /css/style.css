@@ -185,7 +185,6 @@ footer {
 		display: inline-block;
 		margin: 0 auto;
 		padding: 7px;
-		background-color: #555;
 		color: #fff;
 	}
 
@@ -218,7 +217,6 @@ footer {
 		display: inline-block;
 		vertical-align: top;
 		width: 30%;
-		background-color: #555;
 	}
 
 	.block-twelve, .block-thirteen {
