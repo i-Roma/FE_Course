@@ -1,0 +1,161 @@
+<!-- Домашнее задание
+В прикрепленном файле находится код html-страницы.
+Реализовать такой функционал при помощи jquery:
+1. Отобразить скрытый контент из элемента .hidden в элементе .container-main вместо надписи - <p>Please wait. Loading...</p>
+2. Отобразить элементы меню в верхней части ( header) в обратном порядке
+3. В нижней части - footer к каждому элементу меню в span добавить его обратный индекс/ Например:
+В исходном варианте
+<li><a href="#1"><span></span>Lorem ipsum.</a></li>
+<li><a href="#2"><span></span>Fuga, facere.</a></li>
+....
+требуемый результат
+<li><a href="#1"><span>#7</span>Lorem ipsum.</a></li>
+<li><a href="#2"><span>#6</span>Fuga, facere.</a></li>
+....
+Даный метод должен работать при любом количестве элементов в меню -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            // your code shold be placed here
+
+            /*  1. */
+            var $elHidden, $getHiddenText, $elLoading, $pushHiddenText;
+
+            $elHidden = $('.hidden');
+            $getHiddenText = $elHidden.html();
+
+            $elLoading = $('.loading');
+            $pushHiddenText = $elLoading.html($getHiddenText);
+
+            /*  2. */
+            var $setClass, $navHeaderEl, $getNavHeaderEl, $navHeaderElRev, $navHeaderElChange, $pushNavElChange;
+
+            $setClass = $('header nav ul li a').addClass('padding-right_link');
+
+            $navHeaderEl = $('header nav ul li');
+            $getNavHeaderEl = $navHeaderEl.toArray();
+            $navHeaderElRev = $getNavHeaderEl.reverse();
+
+            $navHeaderElChange = $('header nav ul');
+            $pushNavElChange = $navHeaderElChange.html($navHeaderElRev);
+
+
+            /*  3. */
+            var $navFooterEl, $setClasslink, $link, $reverseLink;
+
+            $navFooterEl = $('footer nav ul li a');
+            $setClasslink = $navFooterEl.attr('class', 'link');
+
+            $link = $('.link');
+            $reverseLink = $link.toArray().reverse();
+
+            $link.each(function (index, spanElement) {
+              $(spanElement).find('span').text($($reverseLink[index]).attr('href'));
+            });
+
+        })
+
+    </script>
+
+    <style>
+        html, body {
+            margin: 0;
+        }
+        .wrapper {
+            position: relative;
+        }
+        .wrapper > * {
+            border: 1px solid red;
+        }
+        .hidden {
+            display: none;
+        }
+        .loading {
+            font-style: italic;
+            color: #ccc;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        header {
+            min-height: 3em;
+        }
+
+        header ul {
+            float: right;
+        }
+
+        header::after {
+            content:'';
+            clear:both;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        .padding-right_link {
+            padding-right: 5px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+
+            <nav>
+                <ul>
+                    <li><a href="">Lorem.</a></li>
+                    <li><a href="">Sit.</a></li>
+                    <li><a href="">Illo?</a></li>
+                    <li><a href="">Adipisci?</a></li>
+                    <li><a href="">Officiis.</a></li>
+                </ul>
+            </nav>
+            <a href="./" class="logo"><img src="logo.png" width="200" alt=""></a>
+        </header>
+        <article>
+            <h1 class="title">Page title</h1>
+            <div class="container-main">
+                <p class="loading">Please wait. Loading...</p>
+            </div>
+        </article>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#1"><span></span>Lorem ipsum.</a></li>
+                    <li><a href="#2"><span></span>Fuga, facere.</a></li>
+                    <li><a href="#3"><span></span>Distinctio, exercitationem!</a></li>
+                    <li><a href="#4"><span></span>Harum, culpa.</a></li>
+                    <li><a href="#5"><span></span>Debitis, ullam?</a></li>
+                    <li><a href="#6"><span></span>Similique, perferendis.</a></li>
+                    <li><a href="#7"><span></span>Voluptatum, odit.</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+        <div class="hidden">
+            <h2>Lorem ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quam, voluptatum fuga aspernatur rerum magni! Aliquid vero, incidunt distinctio doloribus optio a repellendus qui doloremque eligendi, omnis minus! Molestiae, enim.</p>
+            <p>Neque sint praesentium voluptatum omnis corporis dolore tenetur eum a reprehenderit dolorum officiis reiciendis ipsam facere laborum quisquam beatae est eveniet aliquid expedita ab, qui iste asperiores. Quidem velit, qui.</p>
+            <p>Ullam voluptatum, vel amet velit, cumque labore soluta reiciendis et blanditiis excepturi totam error perferendis ipsa? Aliquid, cum, nemo? Repellendus atque, ipsum voluptatum! Accusamus consectetur, tempora repellendus. Natus, beatae, impedit?</p>
+        </div>
+    </div>
+</body>
+</html>
