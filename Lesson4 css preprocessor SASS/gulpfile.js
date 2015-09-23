@@ -14,4 +14,4 @@ gulp.task('watch', function(){
     gulp.watch('./sass/**/*.sass', ['sass']);
 });
 
-gulp.task('default', ['sass', 'jade', 'watch']);
+gulp.task('default', ['sass', 'watch']);
