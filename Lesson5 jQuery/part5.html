@@ -31,10 +31,10 @@
             var $elHidden, $getHiddenText, $elLoading, $pushHiddenText;
 
             $elHidden = $('.hidden');
-            $getHiddenText = $elHidden.html();
+            hiddenText = $elHidden.html();
 
             $elLoading = $('.loading');
-            $pushHiddenText = $elLoading.html($getHiddenText);
+            pushHiddenText = $elLoading.html(hiddenText);
 
             /*  2. */
             var $setClass, $navHeaderEl, $getNavHeaderEl, $navHeaderElRev, $navHeaderElChange, $pushNavElChange;
@@ -53,14 +53,16 @@
             var $navFooterEl, $setClasslink, $link, $reverseLink;
 
             $navFooterEl = $('footer nav ul li a');
-            $setClasslink = $navFooterEl.attr('class', 'link');
+            /*setClasslink = */ $navFooterEl.attr('class', 'link');
 
             $link = $('.link');
-            $reverseLink = $link.toArray().reverse();
+            reverseLink = $link.toArray().reverse();
 
             $link.each(function (index, spanElement) {
-              $(spanElement).find('span').text($($reverseLink[index]).attr('href'));
+              $(spanElement).find('span').text($(reverseLink[index]).attr('href'));
             });
+            
+            
 
         })
 
