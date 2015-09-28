@@ -45,9 +45,19 @@ footer {
 	margin-left: 20px;
 }
 
+/*
+используйте обобщайющий класс типо  
+.block-gray {
+	background-color: #555;
+	margin-top: 15px;
+}
+и его прописывайте в html - избегайте копипаста
+*/
+
 .block-one, .block-two, .block-three, .block-four, .block-seven, .block-ten, .block-eleven, .block-twelve, .block-thirteen {
 	background-color: #555;
 	margin-top: 15px;
+	
 }
 
 .block-five, .block-six, .block-eight, .block-nine {
