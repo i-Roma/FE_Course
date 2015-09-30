@@ -30,55 +30,61 @@ function compare(firstArray, secondArray) {
 
     function checkElem() {
 
-		if (firstArray.length == secondArray.length) {
-			result = true;
-		} 
-		else if (firstArray.length !== secondArray.length) {
-			result = false;
-		} else {
-			console.log("Something is wrong...");
-		}
+		// if (firstArray.length == secondArray.length) {
+		// 	result = true;
+		// } 
+		// else if (firstArray.length !== secondArray.length) {
+		// 	result = false;
+		// } else {
+		// 	console.log("Something is wrong...");
+		// }
+		
+		result = firstArray.length == secondArray.length;
 	}
 
 	checkElem();
 
 	function checkSum() {
-
-		if (arr[0] > arr[1]) {
-			console.log(
-				{
-					"result": result,
-					"bigger": firstArray
-				}
-			);
-		} else if (arr[0] < arr[1]) {
-			console.log(
-				{
-					"result": result,
-					"bigger": secondArray
-				}
-			);
-		} else if ((arr[0] == arr[1]) && (firstArray.length == secondArray.length)) {
-			console.log(
-				{
-					"result": result,
-				}
-			);
-		} else if ((arr[0] == arr[1]) && (firstArray.length !== secondArray.length)) {
-			console.log(
-				{
-					"result": result,
-					"bigger": []
-				}
-			);
-		} else {
-			console.log(
-				{
-					"result": result,
-					"key": "Something's wrong..."
-				}
-			);
-		}
+		console.log({
+			result:false,
+			bigger : arr[0] > arr[1] ? firstArray : secondArray
+		});
+	
+		// if (arr[0] > arr[1]) {
+		// 	console.log(
+		// 		{
+		// 			"result": result,
+		// 			"bigger": firstArray
+		// 		}
+		// 	);
+		// } else if (arr[0] < arr[1]) {
+		// 	console.log(
+		// 		{
+		// 			"result": result,
+		// 			"bigger": secondArray
+		// 		}
+		// 	);
+		// } else if ((arr[0] == arr[1]) && (firstArray.length == secondArray.length)) {
+		// 	console.log(
+		// 		{
+		// 			"result": result,
+		// 		}
+		// 	);
+		// } else if ((arr[0] == arr[1]) && (firstArray.length !== secondArray.length)) {
+		// 	console.log(
+		// 		{
+		// 			"result": result,
+		// 			"bigger": []
+		// 		}
+		// 	);
+		// } else {
+		// 	console.log(
+		// 		{
+		// 			"result": result,
+		// 			"key": "Something's wrong..."
+		// 		}
+		// 	);
+		// }
 
 	}
 
